@@ -22,9 +22,8 @@ $(document).ready(function(){
 
 
   function bodyDisplay(num){
-    $.getJSON('https://calm-beach-80027.herokuapp.com/timeline', 'page=' + num,  function(data){
-      paginationCount(pageCount(data.length), num)
-      console.log(data.length)
+    $.getJSON('https://calm-beach-80027.herokuapp.com/timeline/1', 'page=' + num,  function(data){
+      paginationCount(pageCount(data[0].count), num)
       timelineDisplay(data)
     })
   }
@@ -46,6 +45,6 @@ $(document).ready(function(){
 
   $(document.body).on('click', '.pagination li a', function(ev){
   ev.preventDefault()
-  fetchPage($(ev.target).attr('href'))
+  timelineDisplay($(ev.target).attr('href'))
 })
 })
