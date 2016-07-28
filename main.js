@@ -7,7 +7,7 @@ $(document).ready(function(){
   function paginationCount(pages, currentPage){
     if($('nav').length === 0){
       $('#timeline').prepend(
-        "<div class=\"col-md-6 col-md-offset-3\"><nav aria-label=\"Page navigation\"><ul class=\"pagination\"></ul></nav></div>"
+        "<div class=\"col-md-4 col-md-offset-4\"><nav aria-label=\"Page navigation\"><ul class=\"pagination\"></ul></nav></div>"
       )
     }
     $('.pagination').html("")
