@@ -1,0 +1,23 @@
+.body {
+  background: url("http://www.intrawallpaper.com/static/images/abstract-mosaic-background.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.body h1 {
+  color: rgb(233, 233, 212);
+  margin-bottom: 20px;
+}
+
+.chirp {
+  border-radius: 25px;
+  background-color: rgb(92, 164, 217);
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
+
+.chirp img {
+  width: 175px;
+}
