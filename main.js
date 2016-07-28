@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 
   function bodyDisplay(num){
-    $.getJSON('https://calm-beach-80027.herokuapp.com/timeline/1', 'page=' + num,  function(data){
+    $.getJSON('https://calm-beach-80027.herokuapp.com/timeline/', 'page=' + num,  function(data){
       paginationCount(pageCount(data[0].count), num)
       timelineDisplay(data)
     })
